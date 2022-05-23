@@ -5,7 +5,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from Lumine import (
+from Kurisu import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -74,8 +74,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is Zhongli! 
-I am a Genshin Impact themed group management bot.
+Hi {}, my name is Kurisu! 
+I am a Steins Gate themed group management bot.
 
 You can find my list of available commands with /help.
 """
@@ -100,24 +100,14 @@ And the following:
 )
 
 HELP_IMG = (
-    "https://te.legra.ph/file/9b3f9cff62cda296279cc.mp4",
-    "https://te.legra.ph/file/3c0d8ff793282f2baab52.mp4",
-    "https://te.legra.ph/file/bc228cffc7a7f49f99b6b.mp4",
-    "https://te.legra.ph/file/497272cee475c5530c437.mp4",
-    "https://te.legra.ph/file/29b7ec90c705afe86b1a3.mp4",
-    "https://te.legra.ph/file/4f427193b86182fa07678.mp4",
-)
-
+    "https://telegra.ph/file/726bc12aae6dc7fb8038b.jpg" ,
+           )
+   
 LUM_IMG= (
-          "https://te.legra.ph/file/f8f4c345365bac6de0993.mp4",
-          "https://te.legra.ph/file/e690403cba45611ca7daf.mp4",
-          "https://te.legra.ph/file/50bf031019f63482031df.mp4",
-          "https://te.legra.ph/file/b7ec631475e45dc946857.mp4",
-          "https://te.legra.ph/file/f38d064f1f2bd50e3e037.mp4",
-          "https://te.legra.ph/file/3999a427582d5e90db5bf.mp4",
+          "https://telegra.ph/file/726bc12aae6dc7fb8038b.jpg",
           )
 
-Lumine_IMG = "https://telegra.ph/file/d9fd3e727627b10179308.jpg"
+Lumine_IMG = ("https://telegra.ph/file/726bc12aae6dc7fb8038b.jpg")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Lumine is hosted on its own server and require donations as of now but \
@@ -241,7 +231,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add Zhongli to your group",
+                                text="Add Kurisu to your group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -262,13 +252,13 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Website",
-                                url="https://zhongli-tele.netlify.app/",
+                                url="google.com",
                             )
                         ],
                         [
                             InlineKeyboardButton(
                                 text="Recommended Bot",
-                                url="https://t.me/nezuko13_bot",
+                                url="https://t.me/LelouchXRobot",
                             )
                         ],
                     ]
